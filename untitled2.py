@@ -7,15 +7,13 @@ Original file is located at
     https://colab.research.google.com/drive/1kbb4WbcVx4Rr2j8HG2PIQmcoSIbuM5UC
 """
 
-!pip install streamlit pyngrok
 
 # Commented out IPython magic to ensure Python compatibility.
 # %%writefile app.py
-# import streamlit as st
-# 
-# st.title("Hello from Streamlit in Colab!")
-# st.write("This is a simple Streamlit app running inside Google Colab.")
-# name = st.text_input("What's your name?")
-# if name:
-#     st.write(f"Hello, {name} 👋")
-#
+import streamlit as st
+
+st.title("Hello from Streamlit in Colab!")
+st.write("This is a simple Streamlit app running inside Google Colab.")
+name = st.text_input("What's your name?")
+if name:
+    st.write(f"Hello, {name} ")
